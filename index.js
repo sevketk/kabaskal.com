@@ -12,7 +12,9 @@ function initMap() {
   infoWindow = new google.maps.InfoWindow();
 
   const locationButton = document.createElement("button");
-
+  google.maps.event.addListener(map, "click", (event) => {
+    addMarker(event.latLng, map);
+  });
   
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
