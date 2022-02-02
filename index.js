@@ -7,7 +7,7 @@ let map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     
-    zoom:20,
+    zoom:15,
   });
   infoWindow = new google.maps.InfoWindow();
 
